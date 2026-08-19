@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Sweet Bakery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h1>Sweet Bakery</h1>
+
+            <a href="index.html" class="cart">
+                ← Continue Shopping
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="checkout-section">
+
+    <h2>Checkout</h2>
+
+    <div class="checkout-container">
+
+        <div class="customer-form">
+
+            <h3>Customer Details</h3>
+
+            <form id="checkout-form">
+
+                <label for="customer-name">Full Name</label>
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="customer-phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="customer-phone"
+                    placeholder="03XX-XXXXXXX"
+                    required
+                >
+
+                <label for="customer-address">Delivery Address</label>
+                <textarea
+                    id="customer-address"
+                    placeholder="Enter your delivery address"
+                    required
+                ></textarea>
+
+                <label for="payment-method">Payment Method</label>
+
+                <select id="payment-method">
+                    <option value="Cash on Delivery">
+                        Cash on Delivery
+                    </option>
+
+                    <option value="Card">
+                        Card Payment
+                    </option>
+                </select>
+
+                <button type="submit">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="order-summary">
+
+            <h3>Order Summary</h3>
+
+            <div id="checkout-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <h3>
+                Total: Rs.
+                <span id="checkout-total">0</span>
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>

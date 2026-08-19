@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakery</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Sweet Bakery</h1>
+
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        
+                <ul id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+        </nav>
+    </header>
+
+<!-- Floating Cart Button -->
+
+            <a href="Checkout.html" class="cart">
+                🛒
+                <span id="cart-count">0</span>
+            </a>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Freshly Baked With Love</h2>
+                <p>
+                    Delicious cakes, desserts and bakery items
+                    made fresh for you.
+                </p>
+
+                <button>Order Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="Images/Hero-Image.jpg.jpg" alt="Delicious Cake">
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Our Popular Products</h2>
+
+            <div class="product-container">
+                
+                    <div class="product-card">  
+                            <img src="Images/Chocolate-Cake.jpg.jpg" alt="">
+                            <div class="product-card">
+                            <div class="product-info">
+                            <h3>Chocolate Cake</h3>
+                            <p>Rich and delicious chocolate cake.</p>
+                            <strong>Rs. 1,500</strong>
+                            <button onclick="addToCart('Chocolate Cake', 1500)">Add to Cart</button>
+                            </div>
+                    </div>    
+            
+            </div>
+
+            <div class="product-container">
+                
+                    <div class="product-card">  
+                            <img src="Images/Red Velvet-Cake.jpg.jpg" alt="">
+                            <div class="product-card">
+                            <div class="product-info">    
+                            <h3>Red Velvet Cake</h3>
+                            <p>Soft red velvet with cream cheese.</p>
+                            <strong>Rs. 1,800</strong>
+                            <button onclick="addToCart('Red Velvet Cake', 1800)" >Add to Cart</button>
+                            </div>
+                    </div>    
+            
+            </div>
+            
+            <div class="product-container">
+                
+                    <div class="product-card">  
+                            <img src="Images/Cheese-Cake.jpg.jpg" alt="">
+                            <div class="product-card">
+                            <div class="product-info">      
+                            <h3>Cheesecake</h3>
+                            <p>Creamy and delicious cheesecake.</p>
+                            <strong>Rs. 1,600</strong>
+                            <button onclick="addToCart('Cheesecake', 1600)" >Add to Cart</button>
+                            </div>
+                    </div>    
+            
+            </div>       
+
+        </section>
+        
+        <section class="cart-section">
+
+            <h2>Your Cart</h2>
+
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total">
+                <h3>Total: Rs. <span id="cart-total">0</span></h3>
+            </div>
+
+        </section>
+
+<!-- <section class="checkout-section">
+
+    <h2>Checkout</h2>
+
+    <div class="checkout-container">
+
+        <div class="customer-form">
+
+            <h3>Customer Details</h3>
+
+            <form id="checkout-form">
+
+                <label for="customer-name">Full Name</label>
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="customer-phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="customer-phone"
+                    placeholder="03XX-XXXXXXX"
+                    required
+                >
+
+                <label for="customer-address">Delivery Address</label>
+                <textarea
+                    id="customer-address"
+                    placeholder="Enter your delivery address"
+                    required
+                ></textarea>
+
+                <label for="payment-method">Payment Method</label>
+
+                <select id="payment-method">
+                    <option value="Cash on Delivery">
+                        Cash on Delivery
+                    </option>
+
+                    <option value="Card">
+                        Card Payment
+                    </option>
+                </select>
+
+                <button type="submit">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="order-summary">
+
+            <h3>Order Summary</h3>
+
+            <div id="checkout-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <h3>
+                Total: Rs.
+                <span id="checkout-total">0</span>
+            </h3>
+
+        </div>
+
+    </div>
+
+</section> -->
+    
+    </main>
+
+    <footer>
+        <p>© 2026 Sweet Bakery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+
+</body>
+</html>
